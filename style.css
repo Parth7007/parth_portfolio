@@ -1,0 +1,536 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    color: #ededed;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.logo{
+    position: relative;
+    font-size: 55px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.logo span{
+    color: #0ef;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+.navbar a:hover{
+    color: #0ef;
+    text-shadow: 0 0 20px #0ef;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(myimage/finalimage.png), no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+    max-width: 700px;
+    
+}
+
+
+
+.home-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    color: white;
+}
+
+.home-content h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin: -3px 0;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    color: white;
+}
+
+.home-content p{
+    font-size:30px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    color: white;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+   
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+
+.home-sci a:hover{
+    background: white;
+    color: #081b29;
+    box-shadow: 0 0 20px white ;
+}
+
+.home-content h3 span{
+    color: #0ef;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 50px;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+}
+
+
+.aboutme{
+    background: url(myimage/finalimage1.png), no-repeat;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    /* background: url(myimage/Untitled\ design1.png), no-repeat; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+
+.aboutme-content{
+    justify-content: space-evenly;
+    display: inline-block;
+    margin-left: 500px;
+    max-width: 1000px;
+    
+}
+
+.aboutme-content h1{
+    margin-bottom: 20px;
+    font-size: 70px;
+    margin-top: 10px;
+    color: white;
+}
+
+.aboutme-content h1 span{
+    color: #0ef;
+}
+
+.aboutme-content h2{
+    font-size: 50px;
+    color: white;
+}
+
+.aboutme p{
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: white;
+}
+
+.myname{
+    color: #0ef;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-weight: 800;
+}
+
+/* asfhapbadkbavp */
+
+
+/*****SKILL SECTION*****/
+.skill {
+	margin-top: 30px;
+	font-size: 30px;
+    
+}
+
+.skill span {
+	float: right;
+}
+
+.skill div {
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+
+.skill div span {
+	background: #0ef;
+	height: 5px;
+	float: left;
+}
+
+div[role="progressbar"] {
+	color: #0ef;
+	margin-left: 580px;
+	margin-bottom: 20px;
+	width: 150px;
+	;
+	height: 150px;
+	;
+	border-radius: 50%;
+
+	place-items: center;
+	display: grid;
+
+	--pgPercentage: var(--value);
+	background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
+		conic-gradient(#0ef calc(var(--pgPercentage) * 1%), white 0);
+    
+
+    
+
+}
+
+.SKILLSSection{
+    background: url(myimage/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top:100px;
+    
+}
+
+.heading-text{
+    text-align: center;
+    font-size: 70px;
+    
+}
+
+.heading-text span {
+    color: #0ef;
+}
+
+.width-50{
+    padding-top: 50px;
+    padding-bottom: 50px
+   
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700&display=swap');
+
+
+.contact {
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  background: url(myimage/cesar-couto-sKuVjm0xyLY-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.contact-header {
+  font-family: "Montserrat", sans-serif;
+  margin: 10rem 10rem 3rem 10rem;
+  text-align: center;
+}
+
+#co-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #0ef;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#co-text {
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  line-height: 2;
+  height: auto;
+  width: 70%;
+  background-color: rgba(0,0,0,0.6);
+  margin-bottom: 10rem;
+}
+
+.contact-form {
+  font-family: "Montserrat", sans-serif;
+  padding: 5rem;
+}
+
+#form-title {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1px;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.form-field {
+  outline: none;
+  width: 200%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    margin-bottom: .9rem;
+}
+
+#name, #email, #subject, #message {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: none;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+textarea, #message {
+  width: 100%;
+  color: #fff;
+  overflow: visible;
+}
+
+#form-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  border: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 200%;
+  height: 60px;
+  background-color: #c31432;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#form-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2.5%);
+  box-shadow: 0 0 15px 0 #000;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5rem;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.contact-info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #c31432;
+}
+
+.contact-info a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #666;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  margin-bottom: 5rem;
+  transition: all .3s ease;
+}
+
+.contact-info a:hover {
+  transform: translateY(-2.5%);
+  color: #999;
+}
+
+.contact-info .fab {
+  font-size: 20px;
+  line-height: 3rem;
+  padding-left: 2rem;
+  color: #666;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.fab:hover{
+  transform: scale(1.2);
+  color: #999;
+}
+
+
+@media screen and (max-width: 960px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  #form-btn {
+    width: 100%;
+  }
+  
+  #form-title {
+    margin: 3rem auto;
+  }
+  
+  .contact-header{
+    margin: 5rem 5rem 3rem 5rem;
+  }
+  
+  #co-title {
+    font-size: 20px;
+  }
+  
+  #co-text {
+    font-size: 20px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .form-field {
+    width: 125%;
+  }
+  
+  #form-title {
+    margin: 3rem auto;
+  }
+  
+  #form-btn {
+    width: 125%;
+  }
+  
+  .contact-header{
+    margin: 7rem 7rem 3rem 7rem;
+  }
+  
+  .contact-info {
+    padding: 5rem;
+  }
+  
+  #co-title {
+    font-size: 1rem;
+  }
+  
+  #co-text {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .form-field {
+    width: 200%;
+  }
+  
+  #form-btn {
+    width: 200%;
+  }
+}

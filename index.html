@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>P</span>arth</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <!-- <a href="#">Portfolio</a> -->
+            <a href="#contact">Contact</a>
+        </nav>
+
+
+
+
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, there myself</h3>
+            <h1>Parth Kadoo</h1>
+            <h3>And I am a <span class="text"></span></h3>
+            <p>I am a versatile web developer with a passion for machine learning. Proficient in creating dynamic, user-centric websites while exploring the intersection of technology and AI for innovative solutions</p>
+            <div class="home-sci">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/parth_kadoo007/?igshid=NGVhN2U2NjQ0Yg%3D%3D"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/parth-kadoo-7117b425a/"><i class='bx bxl-linkedin' ></i> </a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="aboutme">
+        <div class="aboutme-content">
+            <h1>About <span>Me</span></h1>
+            <h2>My name is <span class="myname"></span></h2>
+            <p>As a passionate Web Developer and aspiring professional in the field of Artificial Intelligence and Data Science, I am currently pursuing my B-Tech at Vishwakarma Institute of Information Technology. My academic journey is complemented by hands-on experience in Machine Learning. Beyond coding, my love for cricket fuels my competitive spirit and teamwork. I thrive on challenges, leveraging my skills to create innovative web solutions. Driven by a curiosity for emerging technologies, I am dedicated to continuous learning and growth, aiming to make a meaningful impact in the ever-evolving tech landscape. Explore my portfolio to witness the convergence of my technical prowess and creative problem-solving.</p>
+        </div>
+    
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".text",{
+            strings: ["Web-Developer", "Machine Learner"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            backDelay: 1000,
+            loop: true
+        })
+
+        var myname = new Typed(".myname",{
+            strings: ["Parth Kadoo"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+
+
+
+
+<!-- <section class="container1" id="skills">
+    <h1 class="subtitle">My <span>Skills</span></h1>
+    <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="technical-bars">
+            <div class="bar"><i style="color: #c95d2e;" class='bx bxl-html5'></i>
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+
+
+
+            <div class="bar"><i style="color: #147bbc;" class='bx bxl-css3' ></i>
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line CSS">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar"><i style="color: #b0bc1e;" class='bx bxl-javascript' ></i>
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line JavaScript">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="bar"><i style="color: #c32ec9;" class='bx bxl-python' ></i>
+                <div class="info">
+                    <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container1">
+        <h1 class="heading1">professional Skills</h1>
+        <div class="radia;-bars">
+
+            <svg x = "0px"  y="0px" viewBox = "0 0 200 200">
+                <circle class="progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                <circle class="path path-1" cx = "100" cy = "100" r = "80"></circle>
+            </svg>
+
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+
+        </div>
+
+        <div class="radia;-bars">
+
+            <svg x = "0px"  y="0px" viewBox = "0 0 200 200">
+                <circle class="progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                <circle class="path path-1" cx = "100" cy = "100" r = "80"></circle>
+            </svg>
+
+            <div class="percentage">65%</div>
+            <div class="text">Problem SOlving</div>
+            
+        </div>
+
+        <div class="radia;-bars">
+
+            <svg x = "0px"  y="0px" viewBox = "0 0 200 200">
+                <circle class="progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                <circle class="path path-1" cx = "100" cy = "100" r = "80"></circle>
+            </svg>
+
+            <div class="percentage">75%</div>
+            <div class="text">Team-Work</div>
+            
+        </div>
+
+        <div class="radial-bars">
+
+            <svg x = "0px"  y="0px" viewBox = "0 0 200 200">
+                <circle class="progress-bar" cx = "100" cy = "100" r = "80"></circle>
+                <circle class="path path-1" cx = "100" cy = "100" r = "80"></circle>
+            </svg>
+
+            <div class="percentage">90%</div>
+            <div class="text">Communication</div>
+            
+        </div>
+    </div>
+    
+
+</section> -->
+
+<!------SKILL SECTION------>
+    <section id="skill" class="SKILLSSection">
+        <div class="main-section">
+           <div class="container">
+             <h2 class="heading-text">My <span>Skills</span></h2>
+             <div class="width-50">
+               <div class="skill">
+                 <b>HTML</b>
+                 <span>95%</span>
+                 <div>
+                   <span style="width:95%"></span>
+                 </div>
+               </div>
+               <div class="skill">
+                 <b>CSS</b>
+                 <span>91%</span>
+                 <div>
+                   <span style="width:91%"></span>
+                 </div>
+               </div>
+               <div class="skill">
+                 <b>JavaScript</b>
+                 <span>85%</span>
+                 <div>
+                   <span style="width:85%"></span>
+                 </div>
+               </div>
+               <div class="skill">
+                 <b>Python</b>
+                 <span>79%</span>
+                 <div>
+                   <span style="width:79%"></span>
+                 </div>
+               </div>
+             </div>
+             <div class="width-50">
+               <div class="width-50">
+                 <div class="react" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">React-65</div>
+               </div>
+               <div class="width-50">
+                 <div  class="jquery" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">Jquery-85</div>
+               </div>
+               <div class="width-50">
+                 <div class="node" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65">Node-65</div>
+               </div>
+               <div class="width-50">
+                 <div class="cmd" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="--value:85">CMD-85</div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+    </section> 
+
+
+    <!-------------CONTACT US SECTION----------------------->
+
+    <section id="contact" class="contact">
+        <div class="contact-header">
+          <h3 id="co-title">Contact Me</h3>
+          <h1 id="co-text">Reach out for a new project or to say hello</h1>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-form">
+            <h3 id="form-title">Send me a message</h3>
+          <form action="mailto:parth.22210202@viit.ac.in" method="post" enctype="text/plain">
+            <fieldset>
+              <div class="form-field">
+                <input name="name" type="text" id="name" placeholder="Your Name"></input>
+              </div>
+            <div class="form-field">
+                <input name="email" type="email" id="email" placeholder="Your Email"></input>
+              </div>
+            <div class="form-field">
+                <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+              </div>
+          <div class="form-field">
+                <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
+              </div>
+            </fieldset>
+        <input id="form-btn" type="submit" value="send">
+          </form>
+      </div>
+        
+          <div class="contact-info">
+            <h3>Email Me At </h3>
+            <a href="mailto:parth.22210202@viit.ac.in"><p>parth.22210202@viit.ac.in</p></a>
+            <h3>Find Me On </h3>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/parth-kadoo-7117b425a/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Parth7007"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/parth_kadoo007/?igshid=NGVhN2U2NjQ0Yg%3D%3D"><i class='fab fa-instagram'></i></a>
+            </div>
+          </div>
+          </div>
+      </section>
+    
+</body>
+</html> 
