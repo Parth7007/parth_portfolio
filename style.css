@@ -51,6 +51,10 @@ body{
     animation: slideTop .5s ease forwards;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+}
 .navbar a:hover{
     color: #0ef;
     text-shadow: 0 0 20px #0ef;
@@ -532,5 +536,56 @@ textarea, #message {
   
   #form-btn {
     width: 200%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar a {
+      margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme-content {
+      margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .contact-content {
+      flex-direction: column;
+  }
+
+  .contact-info {
+      align-items: center;
+  }
+  
+  .contact-info a {
+      margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-header {
+      margin: 5rem 5rem 3rem 5rem;
+  }
+  
+  #co-title {
+      font-size: 20px;
+  }
+
+  #co-text {
+      font-size: 20px;
+  }
+  
+  .contact-form {
+      padding: 20px;
   }
 }
